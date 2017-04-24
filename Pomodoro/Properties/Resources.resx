@@ -4104,4 +4104,13 @@
         /////////////////////////////w==
 </value>
   </data>
+  <data name="MainWindow_MainWindow_Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="MainWindow_MainWindow_Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="MainWindow_MainWindow_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
 </root>

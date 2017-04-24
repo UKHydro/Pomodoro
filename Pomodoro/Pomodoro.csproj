@@ -39,6 +39,14 @@
   <PropertyGroup>
     <ApplicationIcon>pomodoro.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -92,9 +100,6 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="tomato.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="pomodoro.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +107,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\beeps.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tomato.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
